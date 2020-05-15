@@ -2,37 +2,141 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"
-    />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="icon" href="./img/icon.png" />
-    <title>Basic - Bootstrap 4 with Gulp 4</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>About</title>
+
+    <title>Blog Post - Start Bootstrap Template</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- Custom styles for this template -->
+    <link rel = "stylesheet"
+          type = "text/css"
+          href = "css/about.css" />
+
+    <link rel = "stylesheet"
+          type = "text/css"
+          href = "css/header.css" />
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+
 </head>
 
 <body>
-<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top"> <a class="navbar-brand" href="index.html">Home</a>
 
-    <button class="navbar-toggler"
-            type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
-            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
-
-    </button>
-    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item"> <a class="nav-link" href="about.html">About</a>
-
-            </li>
-        </ul>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" style="color: #0b2e13">
+    <div class="container">
+        <a class="navbar-brand" href="aol.html">Rise & Fall</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <div class="dropdown">
+                        <button class="dropbtn" onclick="window.location.href = 'index.html';">Home</button>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <button class="dropbtn">Rise</button>
+                        <span class="sr-only">(current)</span>
+                        <div class="dropdown-content">
+                            <a href="google.html">Google</a>
+                            <a href="youtube.html">Youtube</a>
+                            <a href="facebook.html">Facebook</a>
+                            <a href="baidu.html">Baidu</a>
+                            <a href="wikipedia.html">Wikipedia</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <button class="dropbtn">Fall</button>
+                        <div class="dropdown-content">
+                            <a href="aol.html">AOL</a>
+                            <a href="yahoo.html">Yahoo</a>
+                            <a href="geocities.html">Geocities</a>
+                            <a href="msn.html">MSN</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <button class="dropbtn" onclick="window.location.href = 'about.html';">About</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </div>
 </nav>
-<main role="main" class="container">
-    <div class="content">
-        <h1>My About Page</h1>
 
-        <p class="lead">Use this document as a way to quickly start any new project.
-            <br>All you get is this text and a mostly barebones HTML document.</p>
+<!-- Page Content -->
+<section class="py-5">
+    <div class="container">
+        <h1 class="display-4">About</h1>
+        <p class="lead">Demo Text</p>
     </div>
-</main>
-<!-- /.container -->
+</section>
+
+<!-- SiteMap -->
+
+<section class="py-5" style="margin-top: -6em">
+    <div class="container">
+        <h1 class="display-4">Sitemap</h1>
+    </div>
+</section>
+
+<div class="tree ">
+    <ul>
+        <li><span><a style="color:#000; text-decoration:none;" data-toggle="collapse" href="#Web" aria-expanded="true" aria-controls="Web"><i class="collapsed"><i class="fas fa-folder"></i></i><i class="expanded"><i class="far fa-folder-open"></i></i> Rise & Fall</a></span>
+            <div id="Web" class="collapse show">
+                <ul>
+                    <li><span><a style="color:#000; text-decoration:none;" data-toggle="collapse" href="#page1" aria-expanded="false" aria-controls="page1"><i class="collapsed"><i class="fas fa-folder"></i></i><i class="expanded"><i class="far fa-folder-open"></i></i> Rise</a></span>
+                        <ul><div id="page1" class="collapse">
+                            <li><span><i class="far fa-file"></i><a href="google.html"> Google</a></span></li>
+                            <li><span><i class="far fa-file"></i><a href="youtube.html"> Youtube</a></span></li>
+                            <li><span><i class="far fa-file"></i><a href="facebook.html"> Facebook</a></span></li>
+                            <li><span><i class="far fa-file"></i><a href="baidu.html"> Baidu</a></span></li>
+                            <li><span><i class="far fa-file"></i><a href="wikipedia.html"> Wikipedia</a></span></li></div>
+                        </ul>
+                    </li>
+                    <li><span><a style="color:#000; text-decoration:none;" data-toggle="collapse" href="#Page2" aria-expanded="false" aria-controls="Page2"><i class="collapsed"><i class="fas fa-folder"></i></i><i class="expanded"><i class="far fa-folder-open"></i></i> Fall</a></span>
+                        <ul><div id="Page2" class="collapse">
+                            <li><span><i class="far fa-file"></i><a href="aol.html"> AOL</a></span></li>
+                            <li><span><i class="far fa-file"></i><a href="yahoo.html"> Yahoo</a></span></li>
+                            <li><span><i class="far fa-file"></i><a href="geocities.html"> Geocities</a></span></li>
+                            <li><span><i class="far fa-file"></i><a href="msn.html"> MSN</a></span></li></div>
+                        </ul>
+                    </li>
+                    <li><span><i class="far fa-file"></i><a href="about.html"> About</a></span></li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<!-- Footer -->
+<footer class="py-5 bg-dark">
+    <div class="container">
+        <p class="m-0 text-center text-white">Rise & Fall &copy; 2020</p>
+    </div>
+    <!-- /.container -->
+</footer>
+
+<!-- Bootstrap core JavaScript -->
+<script src="js/jquery-3.5.1.js"></script>
+<script src="js/bootstrap.js"></script>
+
+</body>
+
+</html>ner -->
